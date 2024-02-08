@@ -18,6 +18,7 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
+  
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
 
   return (
@@ -112,9 +113,8 @@ export default function EditInvoiceForm({
           </div>
         </fieldset>
       </div>
-      
-      <input type="hidden" name="id" value={invoice.id} />
 
+      <input type="hidden" name="id" value={invoice.id} />
 
       <div className="mt-6 flex justify-end gap-4">
         <Link
